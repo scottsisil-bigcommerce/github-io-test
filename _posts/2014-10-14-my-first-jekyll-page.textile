@@ -1,5 +1,4 @@
 ---
-layout: post
 title: My First Jekyll Page
 permalink: bigcommerce/api/documents/page.html
 published: true

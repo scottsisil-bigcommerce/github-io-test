@@ -1,5 +1,4 @@
 ---
-layout: post
 title: My Second Jekyll Page
 permalink: bigcommerce/api/documents/page2.html
 published: true
@@ -7,7 +6,8 @@ categories: ['test','code_example']
 ---
 
 h1. My Second Jekyll Page
-	
+
+This is my second Jekyll page, check it out	
 
 h3. Section One
 

@@ -1,9 +1,6 @@
 <h2>Here is my page</h2>
 <h3>Pages</h3>
 <ul>
-	<li><a href="/bigcommerce/api/documents/draft.html">Draft Post</a></li>
-</ul>
-<ul>
 	<li><a href="/bigcommerce/api/documents/page.html">My First Jekyll Page</a></li>
 </ul>
 <ul>
@@ -19,12 +16,40 @@
 </ul>
 <p>Test</p>
 <ul>
-	<li><a href="/bigcommerce/api/documents/draft.html">Draft Post</a></li>
-</ul>
-<ul>
 	<li><a href="/bigcommerce/api/documents/page.html">My First Jekyll Page</a></li>
 </ul>
 <ul>
 	<li><a href="/bigcommerce/api/documents/page2.html">My Second Jekyll Page</a></li>
 </ul>
-<h3>Other</h3>
+<h3>Search</h3>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript">
+  //just a quick example, in no way pretty code.
+  
+  $(document).ready(function() {
+   	$('form#search').submit(function() {
+        search($('input#query').val());
+      return false;
+   	}); 
+  });
+
+  function search(query) {
+    //Try searching for 'Python', 'Hyde', 'Linux'.
+    var result = $.getJSON('http://dtwmf.api.searchify.com/v1/indexes/githubio_index/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&callback=?', function(data) {
+      $('div#results').empty();
+        $('div#results').append('<h3>Results</h3>');
+    	$.each(data.results, function(index, result) {
+        $('div#results').append('<div id="result">\
+      			<p><a href="' + result.docid + '">' + result.title + '</a><br/>\
+      			' + result.snippet_text + '</p>\
+    		</div')
+    	});
+    });
+  }
+</script></head>
+<form id="search">
+<input type="text" id="query" name="query"/>
+<input type="submit"/>
+</form>
+<div id="results">
+</div>
