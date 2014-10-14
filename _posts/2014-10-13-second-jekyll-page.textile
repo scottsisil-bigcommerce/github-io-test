@@ -1,6 +1,5 @@
 ---
 title: My Second Jekyll Page
-permalink: /documents/page2.html
 published: true
 categories: ['test','code_example']
 ---
