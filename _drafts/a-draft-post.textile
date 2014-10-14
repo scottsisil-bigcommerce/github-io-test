@@ -1,0 +1,16 @@
+---
+layout: post
+title: Draft Post
+permalink: bigcommerce/api/documents/draft.html
+published: true
+categories: [test]
+---
+
+h1. Draft Page
+
+Test Draft Page
+
+
+"Home":/  
+
+{{ page.next}}

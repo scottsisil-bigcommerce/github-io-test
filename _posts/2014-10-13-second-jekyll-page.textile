@@ -1,0 +1,17 @@
+---
+layout: post
+title: My Second Jekyll Page
+permalink: bigcommerce/api/documents/page2.html
+published: true
+categories: ['test','code_example']
+---
+
+h1. My Second Jekyll Page
+	
+
+h3. Section One
+
+Page2
+
+"Home":/  | "Next":{{ page.next.url}}
+

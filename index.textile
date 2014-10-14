@@ -1,0 +1,30 @@
+---
+title: This is my title
+layout: post
+---
+
+h2. Here is my page
+
+h3. Pages
+
+{% for post in site.posts %}
+ * "{{post.title}}":{{post.url}} 
+{%endfor%}
+
+h3. Categories
+
+Code Example - 
+{% for post in site.categories.code_example %}
+ * "{{post.title}}":{{post.url}} 
+{%endfor%}
+
+Test
+{% for post in site.categories.test %}
+ * "{{post.title}}":{{post.url}} 
+{%endfor%}
+
+
+h3. Other
+
+{{ paginator.total_posts}}
+

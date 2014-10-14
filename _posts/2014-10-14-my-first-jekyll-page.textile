@@ -1,0 +1,31 @@
+---
+layout: post
+title: My First Jekyll Page
+permalink: bigcommerce/api/documents/page.html
+published: true
+categories: ['test','code_example']
+---
+
+h1. My First Jekyll Page
+	
+
+h3. Section One
+
+Here is the content of my first Jekyll page written in textile. The title of my page is __"{{ page.title}}"__
+
+h3. Code Example
+
+__Ruby__
+{% highlight ruby lineos%}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}
+
+
+
+"Home":/

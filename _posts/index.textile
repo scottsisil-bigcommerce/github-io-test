@@ -1,0 +1,8 @@
+---
+layout: post
+title: Posts Index
+permalink: /posts/index.html
+published: true
+---
+
+h1. Total Posts - {{paginator.total_posts}}
