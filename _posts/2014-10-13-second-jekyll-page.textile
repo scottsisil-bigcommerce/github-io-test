@@ -1,6 +1,6 @@
 ---
 title: My Second Jekyll Page
-permalink: bigcommerce/api/documents/page2.html
+permalink: /documents/page2.html
 published: true
 categories: ['test','code_example']
 ---
