@@ -4,3 +4,4 @@ indextank_api_url: http://:SwfuBTNYgoTg55@dtwmf.api.searchify.com
 
 # these values are applied as regular expressions 
 indextank_excludes: [index.html, 404.html, ^/secret/]
+
